@@ -1,0 +1,9 @@
+libraries used for the project 
+flask
+flask_SQLalchemy
+werkzeug.security
+jinja template
+bootstrap
+flask_login
+werkzeug.security 
+
