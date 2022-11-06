@@ -1,0 +1,35 @@
+
+{% extends 'header.html' %}
+{% block body %}
+    <body>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/img/post-bg.jpg') " py-4>
+            <div class="container position-relative pt-5 px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <form action="{{url_for('post')}}" method="POST">
+                                <div class="form-group">
+                                  <h2>Make a post </h2>
+                                </div>
+                                <div class="form-group">
+                                  <label for="title">Title</label>
+                                  <input type="text" name="title" class="form-control" placeholder="What's Your Article About?"required/>
+                                </div>
+                                <div class="form-group">
+                                  <label for="content">Content</label>
+                                  <textarea name="content" cols="50" rows="20" class="form-control"placeholder="Create some magic here! ✨"required></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <input type="submit" value="Post Article" class="button" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+      
+    </body>
+{% endblock %}

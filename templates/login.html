@@ -1,0 +1,29 @@
+{% extends "header.html"%}
+{% block body %}         
+    <body>
+        <div class="container pt-5" style="max-width:auto; min-height:60%">
+            <br>
+            <form action="{{url_for('login')}}" class="form-inline" method="POST">
+                <div class = 'container'>
+                    <h3>Login:</h3>
+                    <table>
+                        <tr>
+                            <td> <label for="username">Username</label></td>
+                            <td><input type="text" class="form-control" placeholder="Username" name="username" ></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="password">Password:</label></td>
+                            <td><input type="password" class="form-control" placeholder="Password" name="password" ></td>
+                        </tr>
+                    </table>
+                    <input class="btn btn-primary" type="submit" value="Login" a style="background-color:#b1beb3;color:#000" align-center>
+                </div> 
+            </form>
+
+        
+                
+        </div>
+
+    </body>
+{% endblock%}
+
